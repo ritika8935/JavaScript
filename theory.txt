@@ -1,0 +1,771 @@
+                                                                 JAVASCRIPT PART 1
+# javascript is use to add functionality to the web page.
+# ctrl + L = clear the console of any webpage.
+# upper-arrow = previous line or para ko lati hai.
+# downward-arrow=new para ko lati hai.
+
+# what is console?
+->console means javascript,it uses REPL(Read-Evalute-print-loop).
+  Read   = it is use to read whatever we have written inside console window.
+  evalute= it is use to evalute the expression means it compute or do calculation.
+  print  = after reading and calculation it use to print the result.
+  loop   =repeate the process.
+
+
+#variable = variable is simply a name of the storage location means it act as a container which store the value.
+            ex: a(variable)=10(value),age=23,name="riya".
+     
+   DATA TYPE:-
+
+#primitive datatype = we can say it is basic,fundamental and core type data.
+(typeof in javascripte use to tell the type of variable ex: a=25 so typeof a = number,which is datatype of a.)
+1)number-java automatically detect the typeof variable.(c,c++,java m explicitly type detect.),all possible number comes under singal datatype.every number have limit length and if limit exceed then it roundoff the number.remember we dont hit the limit of number.
+2)boolean
+3)string
+4)undefined
+5)null
+6)bigint
+7)symbol
+
+# NAN in js - The NAN global property is a value representing Not-A-Number.
+example:- 0/0=NAN,NAN-1=NAN,NAN+1=NAN,NAN*NAN=NAN , typeof NAN is number.
+
+# OPERATOR PRECEDENCE--
+
+it is general order of solving an expression.
+()
+**
+*,/,% (all three have same precedence value so we solve from left to right with same precedence,if / coming first from left to right then first solve that after move futher).
++,-   (")
+                             KEYWORDS
+
+# Let Keyword - syntax for declaring variable.
+for example:- let a=10;  let age=25; let cgpa; , cgpa=8.6;
+
+# const keyword - values of constants can't be changed with re-assignment & they can't be re-declared.
+ const year = 10;  const pi = 3.14;
+ year = 2026;      const g = 9.8;
+ year = year-1;
+
+# var keyword - old syntax for declaring variable, int 2015 let keyword is introduced and presentally we use the let keyword.
+ var a=10;
+
+                        ASSIGNMENT OPERATOR
+rhs values store in lhs variable.
+a += 1; a-= 1; a/=1; a*=1 a%=2;
+
+                         UNARY OPERATOR:-
+age = age + 1;   age = age - 1;
+age += 1;        age -= 1;
+age++(increment) age--(decrement)
+ Two type of increment operator:- (same with decrement operator)
+1)pre-increment(change,then use)   2)post-increment(use, then change)
+  let age = 10;                        let age = 10;
+  let newage = ++age;                  let newchange = age++;
+
+                                                                  IDENTIFIER RULES
+
+all javascript variables must be identified with unique names(identifier).
+
+*Names can contain letters,digit,underscores,and dollar signs.(no space).
+*Names must begin with a letter.
+*Names can also begin with $ and _.
+*Names are case sensitive(y Y are differant variable).
+*Reserved words (like javascripts keywords)CAANNOT be used as names.
+
+  Ways of writing identifier
+  camelCase - ritikaSingh  (second letter of word are capital).
+  snake-case - ritikasingh (all small).
+  Pascal-Case - RitikaSingh (first letter word are capital). 
+                                                                  BOOLEAN IN JS
+boolean represent a true value-->true or false / yes or no.
+
+let age = 23;               let age = 13;          let age = 25;
+let isAdult=true;           let isAdult = false;     isAdult = True;(incorrect)because true and false are keyword in js so boolean only recognised this two not True or False they not keywords ,first letter are in capital.
+                                                                  WHAT IS TYPESCRIPT?
+it is a language and it is static(fixed) type , where js is dynamic(changed) type.typescript is design by microsoft.
+*static type - we cannot change the value of a vaariable later.
+*dynamic type - we can change the value of a variable later also.
+
+                                                                 STRING IN JS
+String are text or sequence of characters.
+let name = "ritika singh";
+let role = "ironman";
+let char = 'a';
+let num = '23';
+let empty = "";
+let sents = 'this is "apple"';
+let sents = 'this is 'apple''//(incorrect way);
+                                                                 STRING INDICES
+if there is any space between words then that index will also included.for example let name = "RITIKA SINGH"(after ritika there is space and that is at 6 index).
+
+                                                                  CONCATINATION
+adding string together.
+"ritika"+" "+"singh" = "ritika singh" , "riya"+1 = "riya1"
+                                
+                                                             NULL AND UNDEFINED IN JS
+undefined:-A variable that has been assigned a value of tye undefined.
+for example: let a; print a the ans will be undefined.
+
+null:-The null represent the inetentional absents of any objects value,to be explicitly assigned.
+for example: let a=null;
+
+ ...........................................................................................................................................................................................                                                                
+                                                                   JAVASCRIPT PART 2
+                         
+                                                                    Console.log():-
+console.log()--it means writing a java program on console which will printed on browser console.(java file ko browser se connect krane k liye console.log ka use karte hai)
+To write(log) a message on the console.
+ex:- console.log("ritika singh");
+     console.log(1234);
+     console.log(2+2);
+
+                                                                   Linking js file
+<Script src="app.js"></Script>
+
+                                                                   Template Literals
+They are used to add embedded expression is a string.(it append the string)
+let a=5;
+let b=10;
+console.log(`your pay $(a+b) rupees`);
+
+                                                                  Operators in js
+*Arithmetic (+,-,*,/,%,**)
+*Unary(++,--)
+*Assignment(=,+=,-=,/=,%=,*= etc)
+*Comparison(>,>=,<,<=,==,!=)-> = compares value,not type where as === compares type and value.
+ex:- "123" == 123(true),     "123"===123(false)
+      0 == ' '(true),         0 === ' '(false)
+      0 == false (true),      0 === false (false)
+      null == undefined(true),null === undefined(false)
+*Comparison for non-number:-
+'a'->61, 'b'->62.....       'A'->41,'B'->42....
+ ex:-
+'a' > 'A'(true)
+'a' > 'b (false)
+
+*logic-> 
+
+............................................................................................................................................................................................                                                            
+                                                                 
+                                                                    JAVASCRIPT PART 3
+                                                                  
+                                                                        String Methods
+Mothods - actions that can be performed on objects.
+format - String.Method()
+ex- console.log().
+                                                                        str.trim()
+Trims whitspaces from both ends of string and returns a new one.
+let msg=" hello ";
+msg.trim(); - "hello"
+msg         - " hello "
+output      - "hello" but value of msg will remain same.
+                                                                        String are immutable in js
+no changes can be made to strings.
+whenever we do try to make a change,a new string is created and old one remains same.after applying method original string remain the same to do any changes in original string we need to change the complete msg.
+                                                                        str.toUpperCase() & str.toLowerCase()
+let str = "Random string";
+str.toUpperCase(); - "RANDOM STRING"
+str.toLowerCase(): - "random string"
+                                                                        String Methods with arguments-indexOf()
+Argument is a some value that we pass to the mothod.
+format
+stringName.method(arg)
+
+*indexOf - returns the first index of occurence of some value in string.or gives -1 if not found.
+let str = "Ilovecoding";
+str.indexOf("love") //1
+str.indexOf("j")   //-1
+str.indexOf("o")   //2(only one index)
+                                                                        Method Changing
+Using one method after another.order of execution will from left to right.
+str.toUpperCase().trim()
+let msg = "hello";
+console.log(msg.toUpperCase().trim());
+let newmsg = msg.toUpperCase().trim();
+console.log(newmsg);
+                                                                          Slice
+Retunrs a part of the original string as anew string.
+let str= "Ilovecoding";
+str.slice(5) //"coding"
+str.slice(1,4) //"love"
+str.slice(-num)=str.slice(length-num) - str.slice(-1)=str.slice(11-1) => 10 //g
+
+                                                                         Replace
+
+Searches a value in the string & returns a new string with the value replaced.
+let str = "Ilovecoding";
+console.log(str.replace("love","do"); //"Idocoding
+                                                                         Repeat
+Returns a string with the number of copies of a string
+let str="mango";
+str.repeat(3)  //"mangomangomango"
+                                                                         AARAY(DATA STRUCTURE)
+Linear collection of things
+let stud=["riya","ritika","prachi"]; it start from o index.
+let num=[2,5,6,7]; num.lenght //4
+                   typeof num //object
+                   num[4] //undefined
+                                                                         CREATING ARRAYS
+let marks=[34,5,67,88];
+let names=["riya","ritika","prachi"];
+let info=["riya",4,4.5]; //mixed array ........info[0]//riya , info[0][1] //'i' , info[0].length //4
+
+//empty array
+let newarr=[]; newarr.lenth //0
+                                                                         ARRAYS ARE MUTABLE
+array can be changed the value of a original value.
+let names=["riya","ritika","prachi"];
+names[0]="rahul"; ["rahul","ritika","prachi"];
+names[10]="anu"; 
+                                                                         ARRAY MATHODS
+push: add to end                     unshift: add to start
+pop: delete from end & returns it    shift: delete from start & returns it
+
+ex:--let names=["riya","ritika","prachi"];
+     names.push("anu");   names.unshift("rahul");
+     names.pop();         names.shift(); .........let shf = names.shift();....print names
+                                                             
+                                                                        ARRAY indexOf & include
+*indexOf - returns index of something.
+*include - seaarch for a value.
+ ex:- let primary = ["red","yellow","blue"]
+primary.indexOf("yellow"); //1                primary.include("red"); //true
+primary.indexOf("green"); //-1                primary.include("green"); //false
+
+                                                                       concat & reverse
+*concat: merge 2 array
+ex:- let primary=["red","yellow","blue"];
+     let secondary=["orange","green","violet"];
+primary.concat(secondary); // ["red","yellow","blue","orange","green","violet"];
+
+*reverse: reverse an array
+let primary=["red","yellow","blue"];
+primary.reverse(); //["blue","yellow","red"]
+                                                                        Slice
+slice: copies an portion of an array.
+let primary=["red","yellow","blue"];
+primary.slice() //["red","yellow","blue"];
+primary.slice(2) //["blue"]
+primary.slice(1,2) //["yellow"]
+primary.slice(primary.length-1) //["blue']
+primary.slice(primary.length)
+                                                                          splice
+splice:remove / replace / add elements in place
+ *splice(start,deletecount,item0..to..n to be added)
+let color=["red","yellow","blue"];
+color.splice(1); //["yellow","blue"]
+color.splice(0,1);
+color.splice(0,1,"black","green");
+color.splice(1,1,"pink")
+                                                                          sort in array
+sort: sort an array.sorting in array only works for an character not for number and if array is in number then first it convert that into character then after it sort the array.
+ex:- let months=["monday","sunday","wednesday","tuesday"];
+      months.sort() //["monday","sunday","tuesday","wednesday"];
+let num=[44,66,12,90]
+num.sort() //[90,66,12,44]
+
+............................................................................................................................................................................................
+
+                                                                    JAVA SCRIPT PART 5
+
+                                                                    object literals 
+- used to store keyed collection & complex entities.
+property =>(key,value)pair
+object are a collection of properties.
+ 
+for ex:- const students ={
+
+         name: "Ritika" -combination of name and Ritika is called as property.
+         age:   23
+         marks: 94.4
+          |     |
+        key    value
+
+} Notes: - student is const means internally we can change the value of key but the address which is store by the student can not be chnaged.
+                
+                                                                   GET VALUE
+let students={
+ name:"Ritika",
+ marks:94.4
+};
+students[name],students.name
+students[name]-in this square braket we can assign another variable like - let prop = "Ritika"  student[prop] //'Ritika',for . this is not possible.
+
+                                                                    GET VALUES 
+js automatically converts objects keys to string.
+even if we made the number as a key or keywords as a key,then number will be converted to string.
+const obj={
+    1: "a",
+    2: "b",
+    true: "c",
+    null: "d",
+    undefined: "e"
+}; //notes:-obj[1] will works but obj.1 will not works.
+                                                                  ADD/UPDATE VALUE
+*change content
+*add new property like gender
+*delete the key 
+
+OPERATION:--
+
+post
+Object { username: "@RitikaSingh", content: "do not freak out ", likes: 1000, repost: 500, tags: (2) […] }
+
+post.gender
+undefined
+post.gender = "female"
+"female"
+post
+Object { username: "@RitikaSingh", content: "do not freak out ", likes: 1000, repost: 500, tags: (2) […], gender: "female" }
+
+post.content = "peacefull"
+"peacefull"
+post
+Object { username: "@RitikaSingh", content: "peacefull", likes: 1000, repost: 500, tags: (2) […], gender: "female" }
+
+delete post.gender
+true
+
+post
+
+Object { username: "@RitikaSingh", content: "peacefull", likes: 1000, repost: 500, tags: (2) […] }
+
+                                                            NESTED OBJECTS
+object inside object:-
+
+let classinfo={
+    krishna:{
+        grade: "A",
+        city: "ranchi"
+    },
+    ritika: {
+        grade: "A+",
+        city:"delhi"
+    },
+    riya: {
+        grade:"o",
+        city:"pune"
+    }
+};
+ operation:--
+classinfo.riya
+Object { grade: "o", city: "pune" }
+
+classinfo.riya["grade"]
+"o"
+classinfo.riya["city"]
+"pune"
+classinfo.riya.city = "london"
+"london"
+classinfo.riya.city
+"london" 
+                                                    ARRAY OF OBJECTS
+let cls=[
+    {
+        name: "krishn",
+        grade:"A",
+        city:"pune"
+    },
+    {
+        name: "riya",
+        grade:"A+",
+        city:"banaras"
+    },
+    {
+        name: "ritika",
+        grade:"o",
+        city:"london"
+    }
+];
+operation:-
+cls
+Array(3) [ {…}, {…}, {…} ]
+
+cls[0]
+Object { name: "krishn", grade: "A", city: "pune" }
+
+cls[2]
+Object { name: "ritika", grade: "o", city: "london" }
+
+cls[1].name
+"riya"
+cls[1].city = 'merut'
+"merut"
+cls[1].city
+"merut"
+cls[1].gender ="female"
+"female"
+cls
+Array(3) [ {…}, {…}, {…} ]
+​
+0: Object { name: "krishn", grade: "A", city: "pune" }
+​
+1: Object { name: "riya", grade: "A+", city: "merut", … }
+​
+2: Object { name: "ritika", grade: "o", city: "london" }
+​
+length: 3
+​
+<prototype>: Array []
+
+cls[1]
+Object { name: "riya", grade: "A+", city: "merut", gender: "female" }
+
+                                                                         MATH OBJECT
+Math.PI
+3.141592653589793
+Math.E
+2.718281828459045
+Math.abs(-5)
+5
+Math.pow(2,4)
+16
+Math.floor(9.8)
+9
+Math.ceil(9.8)
+10
+Math.random()----0 to 1 and 1 is exclusive.
+0.128327555369105
+                                                                   INTEGER RANDOM NUMBER
+
+
+step 1: let num = Math.random(); // 0.3546568678
+step 2: num = num*10;            //  4.345464564
+step 3: num = Math.floor(num);   //   4
+step: num = num +1;             //  5
+
+from 1 to 10 random number in one line code-
+let random = Math.floor(Math.random()*10)+1;
+console.log(random);
+
+............................................................................................................................................................................................
+                                                                      JAVA SCRIPT 6
+
+                                                                       FUNCTION IN JS
+function definition (telling js)
+
+function funcName(){
+//do something
+}
+
+function calling(using the function)
+   funcName();
+ex:-- function hello(){
+        console.log("hello");
+  }
+                                                                   function with argument
+value we pass to the function
+
+function funcName(arg1,arg2){
+  //do something
+}
+                                                                  Return keyword
+return keyword is used to return some value from the function.
+
+input----->function(does some work)------>output
+ex:-let str=["hello","ritka","how","are","you"];
+function concate(str){
+    let result="";
+    for(let i=0;i<str.length;i++){
+        result +=str[i];
+    }
+    return result;
+}
+ 
+                                                                       SCOPE
+
+Scope determines the accessibility of variable,object and function from different parts of the code.
+
+*function- variable defined inside a function are not accessible(visible) from outside the function.
+*block- variable declared inside a {} block cannot be accessed from outside the block.
+*lexical-a varibale defined outside a function can be accessible inside another function defined after the variable declared,opposite is not true.
+let sum=54;//global scope                                                   
+function calsum(a,b){
+    let sum=a+b;//function scope
+    console.log(sum);
+}
+calsum(10,5);
+
+//block scope
+for(let i=1;i<=5;i++){
+    console.log(i);//block scope
+}
+
+//lexical scope
+function outerfunc(){
+    let x=10;
+    let y=20;
+function innerfunc(){
+    let a=6;
+    console.log(x);
+    console.log(y);
+}
+//console.log(a);bhar se andar k taraf jate hai naki andar se bahar k taraf.
+innerfunc();
+}
+
+                                                                 @ WHAT IS HOISTING
+
+hoisting refers to the process whereby the interpreter appears to move the declaration to the top of the code before execution.variable can be thus be referenced before they are declared in javascript.
+NOTES:- javascript only hoist declaration,not initialization.The variable will be undefined until the line where its initialization is reached.
+HOISTING WITH LET AND VAR:-with let and var hoisting is different.
+console.log(num) -> erroe if let or const but with var undefined is printed.
+let num=6;
+#function expression and class expression are not hoisted.
+
+                                                                  FUNCTION EXPRESSION
+let hello=function(){
+    console.log("hello");
+}
+hello=function(){
+    console.log("ritika");
+}
+let a=function(){
+    console.log("namaste");
+}
+
+                                                                  HIGHER ORDER FUNCTION
+A function that does one or both:
+ *takes one or multiple function as argument.
+ *returns a function
+     code:
+//function take argument as a function
+function multiplegreet(func,count){
+    for(let i=0;i<=count;i++){
+        func();
+    }
+}
+let greet =function(){
+    console.log("hello");
+}
+multiplegreet(greet,10);
+multiplegreet(function() {console.log("namaste")},10);
+
+//higher order function return
+function oddevenreturn(request){
+    if(request=="odd"){
+        return function(n){
+            console.log(!(n%2==0));
+        }
+    }
+    else if(request=="even"){
+        return function(n){
+            console.log(n%2==0);
+        }
+    }
+    else{
+        console.log("wrong request");
+    }
+}
+let request="even";
+                                                                     METHODS
+Action that can be performed on an object.
+  code:
+const calculater={
+    add: function(a,b){
+        return a+b;
+    },
+    sub: function(a,b){
+        return a-b;
+    },
+    mul: function(a,b){
+        return a*b;
+    }
+};
+............................................................................................................................................................................................
+                                                                         JAVA SCRIPT 8
+
+                                                                         ARRAY METHOD
+
+*forEach- basically it print the each element of a array.forEach(some function defination or name);
+*map    -map function create the new array and its size wil be the same as old array.
+ code:
+let num=[3,4,5,1];
+let double=num.map(function(el){
+    return el*2;
+});
+*filter- The filter() method creates a new array filled with elements that pass a test provided by a function.
+         The filter() method does not execute the function for empty elements.
+         The filter() method does not change the original array.
+code:
+let nums=[2,3,4,5,6,7,8,9,10];
+let ans=nums.filter((el)=>{
+    return el%2==0;//even-true  odd-false
+});
+
+*some-Return true if some element of array give true for some function.Else return false.
+arr.some(some function defination or name);
+[1,2,3,4].some((el)=>(el%2==0)); //true work as OR operator
+
+*every-Return true if every element of array gives true for some function.Else return false.
+arr.every(some function defination or name);
+[1,2,3,4].every((el)=>(el%2==0)); //false work as AND operator
+
+*reduce-reduce the array to the single value,The reduce() method returns a single value: the function's accumulated result.
+arr.reduce((accumulator,element)=>(accumulator+element)); //1o
+code:
+//Reduce function 
+let arr=[1,2,3,4,5,6,7];
+let result=arr.reduce((res,el)=>{
+    return res+el;
+});
+console.log(result);//this is used to sum all the element of array.
+
+                                                                           DEFAULT
+Giving a default value to the arguments.
+code:
+function sum(a,b=2){
+    return a+b;
+}
+sum(1);//1 assign in a and default value for b is 2 so the ans will be 3.
+sum(1,4);// ans is 5
+//default value is apply at last because parameter assignment is done in order way.
+function sum(a=2,b){
+    return a+b;
+}
+sum(1)//ans will be NAN because for b there is no value assignment.
+sum(3,4)//7
+
+                                                                          SPREAD(...)-multiple argument spread hota hai
+
+Expands an iteration into multiple values.
+function func(...arr){
+//do something
+}
+code:
+let arr=[3,4,56,7,7,8,8,9,9,0,12,1,2];
+console.log(...arr);
+//it work similar for string also.
+let nam="ritika singh";
+console.log(...nam);
+
+                                                                          Rest-multiple argument leta hai
+Allow a function to take an indefinite number of arguments and bundle them in an array.
+function sum(...args){
+return args.reduce((add,el)=>add+el);}
+
+                                                                          DESTRUCTURING 
+
+DESTRUCTURING - the process of breaking down a complex structure into simpler parts.
+Storing values of array in multiple forms.
+code:
+let arr=["pretter","bruce","ambouce","unlam","abc","xyz"];
+let[winner,runnerup,...other]=arr;//rest of element will store in other array.
+
+DESTRUCTURING OBJECTES:-
+let students={
+    name:"Ritika",
+    cls:"btech",
+    age:23,
+    subject:["dsa","java","web development"],
+    email:"ritika@",
+    password:123,
+};
+let {email,password}=students;
+let {email:user,password:secret,city:palace="mumbai"}=students;
+............................................................................................................................................................................................
+                                                                      JAVASCRIPT PART 9
+                                                                       
+                                                                 DOM(DOCUMENT OBJECT MODEL)
+The DOM represents a document with a logical tree,it allows us to manipulates webpages content(HTML elements).
+write in console(html,css and js file):-
+*document
+*console.dir(document);
+*console.dir(document.all);
+*console.dir(document.all[8]);
+*console.dir(document.all[8].innerText);
+document.all[8].innerText="peter parket" //we can change the name.
+                                                                        Selecting Elements
+#getElementById - Return an element as an object or null(if not found)
+  document.getElementById("id name");
+
+#getElementsByClassName-Return element as an html collection or empty collection(if not found).
+let smallImages=document.getElementsByClassName("oldImg");
+for(let i=0;i<smallImages.length;i++){
+    //console.log(smallImages[i].src);
+    smallImages[i].src="assets/spiderman_img.png";
+    console.log(`value of image no. ${i} is changed`);
+}
+
+#getElementsByTagName -Return element as an html collection or empty collection(if not found).
+document.getElementsByTagName("p")
+HTMLCollection { 0: p, 1: p#description
+, length: 2, … }
+
+document.getElementsByTagName("p")[0]
+<p>
+
+document.getElementsByTagName("p")[0].innerText = "abc"
+"abc" 
+                                                               QUERYSELECTOR
+Allow us to use any css selector.
+queryselector - it select first tag or id or class, even there is more tags id or class.
+queryselectorAll - select all tags.
+
+document.querySelector("#description") //for id
+<p id="description">
+
+document.querySelector(.oldImg)       //for class
+Uncaught SyntaxError: expected expression, got '.'
+debugger eval code:1:24
+document.querySelector(".oldImg")     for class
+<img class="oldImg" src="assets/spiderman_img.png">
+
+document.querySelectorAll("div a") //select all div of anchor tag
+NodeList(4) [ a.boxLink, a.boxLink, a.boxLink, a.boxLink
+ ]
+                                                            MANIPULATING STYLE
+style property, obj.style
+let img=document.querySelector("img")
+undefined
+console.dir(img)
+<img id="mainImg" src="assets/spiderman_img.png">
+debugger eval code:1:9
+undefined
+img.style
+CSS2Properties(0)
+
+let heading=document.querySelector("h1")
+undefined
+heading.style
+CSS2Properties(0)
+
+heading.style.color="purple"
+"purple"
+heading.style.backgroundColor="yellow"
+"yellow"
+                                                          MANIPULATING ATTRIBUTES
+
+obj.getAttribute(attr)
+obj.setAttribute(attr,val)
+
+img.getAttribute("id")
+"mainImg"
+img.setAttribute("id","spiderman");
+undefined
+img.getAttribute("id")
+"spiderman"
+img
+<img id="spiderman" src="assets/spiderman_img.png">
+img.setAttribute("src","assets/creation_3.jpeg")
+undefined
+img
+<img id="spiderman" src="assets/creation_3.jpeg">
+
+                                                     MANUPULATING STYLE
+Using classList
+obj.classList
+
+classList.add() to add new classes
+classList.remove() to remove classes
+classList.contains() to check if class exists
+classList.toggle() to toggle between add & remove(agar class hai to remove karega or gar class ni h to add krega).
+
+​
+
+
+
+
+​
+
