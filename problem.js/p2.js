@@ -84,3 +84,18 @@ The final output should be printed correctly.
 a- Check if the student is eligible for the scholarship.
 b- Check if the student is eligible for the science fair award
 c-Check if the student is eligible for the Award or not*/
+
+/* Build a simple grade calculator for a teacher. The teacher inputs the scores of students, and the program calculates the average grade. However, the challenge is that the scores input are in strings, and you need to ensure proper type conversion and coercion.
+
+Input:-
+student1Score = "90"
+student2Score = "96"
+student3Score = "77"
+
+Output:-
+The average score is = 87.67
+
+Test Cases:-
+The final output should be printed correctly.
+
+Convert the string input scores into numbers with the help of type coercion and apply the average formula on these numerals by storing it in the variable name 'averageScore'.*/
