@@ -1,3 +1,5 @@
+//how many time and where are going to be use.it is a reusable block of code.
+
 // function poem(){
 //     console.log("twinkle twinkle little star");
 //     console.log("how i wonder what you are");
@@ -52,3 +54,27 @@ function concate(str){
     }
     return result;
 }
+
+//for practice
+
+function greetuser(username,mediums){
+ console.log(`Hello ${username} welcome to our ${mediums}!`);
+}
+greetuser("Ritika","website");
+
+function printdetail(name){
+    console.log(`Name: ${name}`);
+    calculatebirth(2001);
+}
+function calculatebirth(birthyear){
+    console.log(2024-birthyear);
+}
+printdetail("Riya");
+
+//default parameter
+function sum(num1=0,num2=0){
+    console.log(`Total sum is: ${num1+num2}`);
+}
+sum(4);
+sum();
+sum(6,2);
