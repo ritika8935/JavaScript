@@ -1,20 +1,47 @@
+let para1=document.querySelector(".p1");
+let para2=document.querySelector(".p2");
+let btn=document.querySelector("button");
+
+let head1=document.createElement("h1");
+let head2=document.createElement("h1");
+
 let press=alert("For playing you need to press button");
 
 let player1=prompt("Enter first player name");
-let player2=prompt("Enter second player name");
+    para1.innerText=player1;
+    let player2=prompt("Enter second player name");
+    para2.innerText=player2;
 
-let random1=Math.floor(Math.random()*6)+1;
-let random2=Math.floor(Math.random()*6)+1;
+btn.addEventListener("click",function(){
 
-if(random1===random2){
-    console.log("game has been draw!");
-}
-else if(random1>random2){
-    console.log(`congrats,${player1} is winner!`);
-}
-else if(random2>random1){
-    console.log(`congrats,${player2} is winner!`);
-}
-else{
-    console.log("Try again!");
-}
+    rand1=Math.floor(Math.random()*6)+1;
+    rand2=Math.floor(Math.random()*6)+1;
+
+    head1.innerText=rand1;
+    para1.appendChild(head1);
+ 
+    head2.innerText=rand2;
+    para2.appendChild(head2);
+
+ 
+   if(rand1===rand2){
+    alert("game has been draw!");
+  }
+   else if(rand1>rand2){
+    alert(`congrats,${player1} is winner!`);
+  }
+   else{
+    alert(`congrats,${player2} is winner!`);
+ }
+
+
+});
+
+
+
+
+
+
+
+
+ 

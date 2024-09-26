@@ -1,12 +1,22 @@
 body{
     text-align: center;
+    background-image: url('dice_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
 }
+
 main{
-    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
+
 p{
     display: inline-block;
 }
+
 .p1,.p2{
     height: 200px;
     width: 300px;
