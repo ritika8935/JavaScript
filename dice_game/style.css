@@ -1,9 +1,10 @@
 body{
     text-align: center;
-    background-image: url('dice_img.jpg');
+    /* background-image: url('dice_img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+    opacity: 0.2;
+    font-weight: bold; */
 
 }
 
